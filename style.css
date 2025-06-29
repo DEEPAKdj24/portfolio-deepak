@@ -1,0 +1,195 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  background-color: #111;
+  padding: 15px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a.active {
+  border-bottom: 2px solid orange;
+}
+
+main {
+  padding: 40px 10%;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.home-section .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.home-section h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: orange;
+}
+
+.buttons-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: orange;
+  color: black;
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px orange;
+}
+
+/* Skills & Education Box Styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.skill-box {
+  flex: 1;
+  min-width: 280px;
+  background-color: #1a1a1a;
+  border-left: 5px solid orange;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+.skill-box h3 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* jdc */
+.resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.resume-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.resume-right {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  color: #00ff90;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: monospace;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
